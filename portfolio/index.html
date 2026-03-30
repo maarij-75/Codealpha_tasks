@@ -1,313 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-   
-  <title>ZAIKA STATION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marij Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="w-11/12 mx-auto mb-10">
+<body class="bg-gradient-to-br from-orange-100 to-red-200 min-h-screen font-sans">
 
-  <header >
+<!-- Main Container -->
+<div class="max-w-5xl mx-auto px-4">
 
- <!--Nav Bar-->
-      <main class="bg-orange-300 text-white">
-<header class="bg-orange-300 text-white">
-  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-    
-    <!-- Logo -->
-   <section class="flex items-center  ">
-  <img src="images/cheff.png" alt="Zaika Station Logo" class="h-30 w-20 rounded" />
-  <h1 class="text-2xl font-bold text-orange-600">Zaika Station</h1>
-</section>
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center bg-white/40 backdrop-blur-md rounded-xl mt-4 shadow-md px-6 py-4">
+        <h1 class="text-xl font-bold text-gray-800">Marij</h1>
 
+        <ul class="flex space-x-6 text-gray-700 font-medium">
+            <li><a href="#" class="hover:text-orange-600 transition duration-300">Home</a></li>
+            <li><a href="About.html" class="hover:text-orange-600 transition duration-300">About</a></li>
+            <li><a href="skills.html" class="hover:text-orange-600 transition duration-300">Skills</a></li>
+            <li><a href="Contact.html" class="hover:text-orange-600 transition duration-300">Contact</a></li>
+        </ul>
+    </nav>
 
-    <!-- Navigation Links -->
-    <ul class="hidden md:flex space-x-3 text-md font-medium transition">
-      <li><a href="#" class="block hover:text-orange-900">Home</a></li>
-            <li><a href="pages/Menu.html" class="hover:text-orange-900">Menu</a></li>
-           <li><a href="pages/Kids-corner.html" class="hover:text-orange-900">kids food</a></li>
+    <!-- HERO -->
+    <section class="text-center mt-20">
+        <h1 class="text-5xl font-extrabold text-gray-800 mb-4">
+            Hello! I am Marij Sohail 👋
+        </h1>
 
-            <li><a href="pages/Deals.html" class="hover:text-orange-900">Deals</a></li>
+        <p class="text-lg text-gray-600 mb-6">
+            Aspiring Graphic Designer & Frontend Developer
+        </p>
 
-      <li><a href="pages/Gallery.html" class="block hover:text-orange-900">Gallery</a></li>
-      <li><a href="pages/About.html" class="block hover:text-orange-900">About</a></li>
-      <li><a href="pages/Contact-info.html" class="block hover:text-orange-900">Contact</a></li>
-            <li><a href="pages/Event.html" class="hover:text-orange-900">Events</a></li>
-      <li><a href="pages/FAQ.html" class="hover:text-orange-900">FAQ</a></li>
-
-      <li><a href="pages/Table-Reserve.html" class="hover:text-orange-900">Reservation</a></li>
-            <li><a href="pages/blog.html" class="hover:text-orange-900">Blog</a></li>
-
-      <li><a href="pages/Testimonial.html" class="hover:text-orange-900">Reviews</a></li>
-         <li><a href="pages/Team-Join.html" class="hover:text-orange-900">Join Us</a></li>
-
-    </ul>
-
-    <!-- Button (optional) -->
-    <section class="hidden md:block">
-      <a href="pages/Order-place.html" class="bg-white text-orange-500 px-4 py-2 rounded hover:bg-orange-100 font-semibold">Order Now</a>
+        <a href="Contact.html" 
+           class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md 
+                  hover:bg-orange-600 hover:scale-105 transition duration-300 inline-block">
+            Contact Me
+        </a>
     </section>
 
-    <!-- Mobile Menu Button -->
-    <section class="md:hidden">
-      <button id="menu-btn" class="text-white focus:outline-none">
-        <!-- Icon -->
-        <svg class="w-6 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </section>
-  </nav>
+    <!-- ABOUT PREVIEW -->
+    <section class="mt-20 text-center">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
 
-  <!-- Mobile Menu -->
-  <section id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
-    <ul class="space-y-2 text-md font-medium">
-      <li><a href="#" class="block hover:text-orange-900">Home</a></li>
-            <li><a href="pages/Menu.html" class="hover:text-orange-900">Menu</a></li>
-                 <li><a href="pages/Kids-corner.html" class="hover:text-orange-900">kids food</a></li>
-
-            <li><a href="pages/Deals.html" class="hover:text-orange-900">Deals</a></li>
-
-      <li><a href="pages/Gallery.html" class="block hover:text-orange-900">Gallery</a></li>
-      <li><a href="pages/About.html" class="block hover:text-orange-900">About</a></li>
-      <li><a href="pages/Contact-info.html" class="block hover:text-orange-900">Contact</a></li>
-            <li><a href="pages/Event.html" class="hover:text-orange-900">Events</a></li>
-      <li><a href="pages/FAQ.html" class="hover:text-orange-900">FAQ</a></li>
-
-      <li><a href="pages/Table-Reserve.html" class="hover:text-orange-900">Reservation</a></li>
-            <li><a href="pages/blog.html" class="hover:text-orange-900">Blog</a></li>
-
-      <li><a href="pages/Testimonial.html" class="hover:text-orange-900">Reviews</a></li>
-      <li><a href="pages/Team-Join.html" class="hover:text-orange-900">Join Us</a></li>
-
-    </ul>
-  </section>
-</header>
-
-
-      </main>
-
-
-
-
-    <section class="bg-cover bg-center h-[200px]  lg:h-[500px] mx-auto  rounded-md   text white flex items-center justify-center opacity-70 hover:opacity-100"
-    style="background-image: url(images/ZAIKA_STATION.png);">
-    <section class="text-center  bg-black bg-opacity-50   rounded p-6    text-white font-sans ">
-        <h2 class="text-4xl font-sans font-bold mb-5 "> WELCOME TO ZAIKA STATION</h2>
-        <p class="mb-4 italic"> Serving Favorite Flavors – Fast, Fresh & Flavorful</p>
-       <a href="pages/Menu.html" class="bg-amber-600 text-center px-4 py-2 rounded hover:bg-amber-800">Explore Menu</a>
-    
-    </section>
-        
-        
+        <p class="text-gray-700 max-w-2xl mx-auto">
+            I am a final year student passionate about graphic design and web development. 
+            I enjoy creating visually appealing designs and responsive websites using modern tools like Tailwind CSS.
+        </p>
     </section>
 
+    <!-- SKILLS PREVIEW -->
+    <section class="mt-20 text-center">
+        <h2 class="text-3xl font-bold mb-6">My Skills</h2>
 
-
-     
-
-    
-  </header>
-
-  <main>
-    <!-- Grid container for all cards -->
-    <section class="mx-auto my-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 p-4">
-      
-
-      <!-- Fast Food Card -->
-   <!-- Fast Food Card -->
-<section class="shadow-md w-80 mx-auto rounded-xl hover:shadow-lg bg-white flex flex-col justify-between h-full">
-  <section>
-    <a href="pages/Fast-food.html">
-      <img class="rounded-t-xl opacity-70 hover:opacity-100 cursor-pointer p-4 border-double w-full object-cover" 
-           src="images/FAST_FOOD.png" 
-           alt="Fast Food" />
-    </a>
-  </section>
-
-  <section class="text-sm leading-6 px-4 pb-4 flex flex-col justify-between flex-grow">
-    <section>
-      <h5 class="font-semibold mb-1">Fast Food, Real Taste!</h5>
-      <p>Speed meets flavor — grab your favorite quick bites now.</p>
-    </section>
-    <a href="pages/Fast-food.html" 
-       class="mt-3 inline-block bg-amber-200 text-center py-1 px-3 rounded hover:bg-amber-400 transition">
-      Try Now
-    </a>
-  </section>
-</section>
-
-<!-- Chinese Food Card -->
-<section class="shadow-md w-80 mx-auto rounded-xl hover:shadow-lg bg-white flex flex-col justify-between h-full">
-  <section>
-    <a href="pages/Chinese.html">
-      <img class="rounded-t-xl opacity-70 hover:opacity-100 cursor-pointer p-4 border-double w-full object-cover" 
-           src="images/CHINESE_FOOD.png" 
-           alt="Chinese Food" />
-    </a>
-  </section>
-
-  <section class="text-sm leading-6 px-4 pb-4 flex flex-col justify-between flex-grow">
-    <section>
-      <h5 class="font-semibold mb-1">Craving Chinese? We’re Stir-Frying It Fresh!</h5>
-      <p>Classic favorites like Chow Mein, Fried Rice, and more — always hot, always delicious.</p>
-    </section>
-    <a href="pages/Chinese.html" 
-       class="mt-3 inline-block bg-amber-200 text-center py-1 px-3 rounded hover:bg-amber-400 transition">
-      Try Now
-    </a>
-  </section>
-</section>
-
-<!-- Juices Card -->
-<section class="shadow-md w-80 mx-auto rounded-xl hover:shadow-lg bg-white flex flex-col justify-between h-full">
-  <section>
-    <a href="pages/juices.html">
-      <img class="rounded-t-xl opacity-70 hover:opacity-100 cursor-pointer p-4 border-double w-full object-cover" 
-           src="images/JUICES.png" 
-           alt="Juices" />
-    </a>
-  </section>
-
-  <section class="text-sm leading-6 px-4 pb-4 flex flex-col justify-between flex-grow">
-    <section>
-      <h5 class="font-semibold mb-1">Fresh Juices to Refresh Your Soul!</h5>
-      <p>Natural, chilled, and bursting with flavor — sip the freshness!</p>
-    </section>
-    <a href="pages/juices.html" 
-       class="mt-3 inline-block bg-amber-200 text-center py-1 px-3 rounded hover:bg-amber-400 transition">
-      Try Now
-    </a>
-  </section>
-</section>
-
-
-      <!-- Desi Food Card -->
-<section class="shadow-md w-80 mx-auto rounded-xl hover:shadow-lg bg-white flex flex-col justify-between h-full">
-<section>
-    <a href="pages/Desi.html">
-      <img class="rounded-t-xl opacity-70 hover:opacity-100 cursor-pointer p-4 border-double w-full object-cover" 
-           src="images/DESI_FOOD.png" 
-           alt="Desi Food" />
-    </a>
-  </section>
-        <section class="text-sm leading-6 px-4 pb-4 flex flex-col justify-between flex-grow">
-         <section>
-
-          <h5 class="font-semibold mb-1">Flavors That Celebrate Culture!</h5>
-          <p>From tandoor to karahi — each dish brings our rich desi heritage to life.</p>
-        </section>
-    <a href="pages/Desi.html" 
-       class="mt-3 inline-block bg-amber-200 text-center py-1 px-3 rounded hover:bg-amber-400 transition">
-      Try Now
-    </a>
-        </section>
-      </section>
-
-      <!-- Sweet Dessert Card -->
-      <section class="shadow-md w-80 mx-auto rounded-xl hover:shadow-lg bg-white flex flex-col justify-between h-full">
-       <section>
-        <a href="pages/Sweet-Desert.html">        
-    <img class="rounded-t-xl opacity-70 hover:opacity-100 cursor-pointer p-4 border-double w-full object-cover" 
-         src="images/SWEET_DESERTS.png" 
-         alt="Sweet Desert" />
-  </a>  </section>
-
-  <section class="text-sm leading-6 px-4 pb-4 flex flex-col justify-between flex-grow">
-    <section>
-      <h5 class="font-semibold mb-1">Celebrate Small Wins with Sweetness</h5>
-      <p>Whether it’s a celebration or a quiet evening, dessert makes it better.</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+            <span class="bg-white px-4 py-2 rounded shadow">HTML</span>
+            <span class="bg-white px-4 py-2 rounded shadow">CSS</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Tailwind</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Canva</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Graphic Design</span>
+        </div>
     </section>
 
-    <a href="pages/Sweet-Desert.html" 
-       class="mt-3 block w-full bg-amber-200 text-center py-1 px-3 rounded hover:bg-amber-400 transition ">
-      Try Now
-    </a>
-  </section>
-</section>
+    <!-- FEATURED PROJECT -->
+    <section class="mt-20 text-center">
+        <h2 class="text-3xl font-bold mb-6">Featured Project</h2>
 
-<!-- BARBECUE-->
-      <section class="shadow-md w-80 mx-auto rounded-xl hover:shadow-lg bg-white flex flex-col justify-between h-full">
-       <section>
-        <a href="pages/Chinese.html">        <img class="rounded-t-xl opacity-70 hover:opacity-100 cursor-pointer p-4 border-double w-full object-cover" src="images/BBQ.png" alt="BBQ" />
-    </a> </section>
-        <section class="text-sm leading-6 px-4 pb-4 flex flex-col justify-between flex-grow">
-          <section>
-          <h5 class="font-semibold mb-1">Grilled to perfection,</h5>
-          <p>Treat yourself to a sizzling barbecue feast that brings friends and family together around every bite</p>
-          </section>
-          <a href="pages/BBQ.html" 
-       class="mt-3 block w-full bg-amber-200 text-center py-1 px-3 rounded hover:bg-amber-400 transition ">
-      Try Now
-    </a>
-        </section>
-      </section>
-    
+        <div class="bg-white p-6 rounded-xl shadow max-w-xl mx-auto hover:scale-105 transition duration-300">
+            <h3 class="text-xl font-bold mb-2">Restaurant Website</h3>
+            <p class="text-gray-600 mb-4">
+                A responsive restaurant website built using HTML and Tailwind CSS with modern UI design.
+            </p>
 
-      <!--Contact Section-->
-
-      <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  });
-</script>
-
-  </main>
-
-
-
-  <section ><h2 class="text-2xl font-bold"> Contact US</h2>
-    <hr class="mb-5" >
-
-    
-   <section class="bg-orange-300 px-7  shadow-md rounded-lg sm:px-4 " > 
-         <img src="images/cheff.png" class=" w-80 h-auto mx-auto sm:my-0  ">
-        <p class="mb-2 ">Our team is always here to help you with your orders, questions, or feedback. Whether you're planning a visit or just want to ask something, we’d love to hear from you!</p>
-               <p class=" mb-2"><strong> Address:</strong> Main Road Near Umer-Marvi Fort</p>
-                 <p class="mb-2"><strong>Phone:</strong><a  class="text-blue-700 p-2"  href="tel:0312XXXXXXX">0312-XXXXXXX</a> </p>
-             <p class="mb-2"><strong>Email:</strong> <a  class="text-blue-700"  href="mailto:altruistic14@gmail.com" > altruistic14@gmail.com</a></p>
-              <p class="mb-2"> <b>Form:</b><a  class="text-blue-700"   href="pages/Contact-info.html" target="_blank"> Contact Form</a></p>
-
-      
-            </section>
+            <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">
+               <a href="https://688df13e756f32c3b5a50e8d--fabulous-biscochitos-d8fc68.netlify.app/">View Project</a> 
+            </button>
+        </div>
     </section>
-      
-         <footer class="bg-amber-300 text-md font-sans text-center mt-9">&copy;  Zaika Station — Made with love in Umerkot, All Right Reserved.</footer>
-  <!-- Popup Section -->
-<!-- POPUP SECTION -->
-<section id="popupMsg" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-  <div class="bg-white rounded-xl p-6 w-96 shadow-lg text-center">
-    <h2 class="text-2xl font-bold text-orange-600 mb-2">Special Offer 🎉</h2>
-    <p class="text-gray-700 mb-4">Place your first order and get <strong>30% off!</strong><br>Minimum order amount: <strong>Rs. 3000</strong>.</p>
-    <button onclick="closePopup()" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded">Got it!</button>
-  </div>
-</section>
 
-<!-- JAVASCRIPT -->
-<script>
-  window.onload = function () {
-    setTimeout(() => {
-      document.getElementById("popupMsg").classList.remove("hidden");
-    }, 2000); // shows after 2 seconds
-  };
+    <!-- CALL TO ACTION -->
+    <section class="mt-20 text-center mb-16">
+        <h2 class="text-2xl font-bold mb-4">Let’s Work Together</h2>
 
-  function closePopup() {
-    document.getElementById("popupMsg").classList.add("hidden");
-  }
-</script>
+        <a href="Contact.html" 
+           class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">
+            Get in Touch
+        </a>
+    </section>
 
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-600">
+        © 2026 Marij Sohail | All Rights Reserved
+    </footer>
 
+</div>
 
 </body>
-
 </html>
