@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marij Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-orange-100 to-red-200 min-h-screen font-sans">
+
+<!-- Main Container -->
+<div class="max-w-5xl mx-auto px-4">
+
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center bg-white/40 backdrop-blur-md rounded-xl mt-4 shadow-md px-6 py-4">
+        <h1 class="text-xl font-bold text-gray-800">Marij Sohail</h1>
+
+        <ul class="flex space-x-6 text-gray-700 font-medium">
+            <li><a href="#" class="hover:text-orange-600 transition duration-300">Home</a></li>
+            <li><a href="About.html" class="hover:text-orange-600 transition duration-300">About</a></li>
+            <li><a href="skills.html" class="hover:text-orange-600 transition duration-300">Skills</a></li>
+            <li><a href="Contact.html" class="hover:text-orange-600 transition duration-300">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="text-center mt-20">
+        <h1 class="text-5xl font-extrabold text-gray-800 mb-4">
+            Hello! I am Marij Sohail 👋
+        </h1>
+
+        <p class="text-lg text-gray-600 mb-6">
+            Aspiring Graphic Designer & Frontend Developer
+        </p>
+
+        <a href="Contact.html" 
+           class="bg-orange-500 text-white px-6 py-3 rounded-lg shadow-md 
+                  hover:bg-orange-600 hover:scale-105 transition duration-300 inline-block">
+            Contact Me
+        </a>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="mt-20 text-center">
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+
+        <p class="text-gray-700 max-w-2xl mx-auto">
+            I am a final year student passionate about graphic design and web development. 
+            I enjoy creating visually appealing designs and responsive websites using modern tools like Tailwind CSS.
+        </p>
+    </section>
+
+    <!-- SKILLS PREVIEW -->
+    <section class="mt-20 text-center">
+        <h2 class="text-3xl font-bold mb-6">My Skills</h2>
+
+        <div class="flex justify-center gap-4 flex-wrap">
+            <span class="bg-white px-4 py-2 rounded shadow">HTML</span>
+            <span class="bg-white px-4 py-2 rounded shadow">CSS</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Tailwind</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Canva</span>
+            <span class="bg-white px-4 py-2 rounded shadow">Graphic Design</span>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section class="mt-20 text-center">
+        <h2 class="text-3xl font-bold mb-6">Featured Project</h2>
+
+        <div class="bg-white p-6 rounded-xl shadow max-w-xl mx-auto hover:scale-105 transition duration-300">
+            <h3 class="text-xl font-bold mb-2">Restaurant Website</h3>
+            <p class="text-gray-600 mb-4">
+                A responsive restaurant website built using HTML and Tailwind CSS with modern UI design.
+            </p>
+
+            <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600 transition">
+               <a href="https://688df13e756f32c3b5a50e8d--fabulous-biscochitos-d8fc68.netlify.app/">View Project</a> 
+            </button>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="mt-20 text-center mb-16">
+        <h2 class="text-2xl font-bold mb-4">Let’s Work Together</h2>
+
+        <a href="Contact.html" 
+           class="bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition">
+            Get in Touch
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-600">
+        © 2026 Marij Sohail | All Rights Reserved
+    </footer>
+
+</div>
+
+</body>
+</html>
