@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kids Calculator</title>
+
+<style>
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#ffd6e0,#c8f7ff);
+    font-family:'Comic Sans MS', cursive;
+}
+
+/* CARD */
+.calculator{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    width:280px;
+}
+
+/* DISPLAY */
+.display{
+    background:#f0f0f0;
+    height:60px;
+    border-radius:10px;
+    margin-bottom:10px;
+    text-align:right;
+    font-size:22px;
+    padding:10px;
+    overflow:hidden;
+}
+
+/* HISTORY */
+.history{
+    height:40px;
+    font-size:12px;
+    color:gray;
+    overflow:auto;
+}
+
+/* GRID */
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-top:10px;
+}
+
+/* BUTTON STYLE */
+button{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+/* COLORS */
+.num{
+    background:#ffeaa7;
+}
+
+.op{
+    background:#74b9ff;
+    color:white;
+}
+
+.equal{
+    background:#55efc4;
+}
+
+.clear{
+    background:pink;
+    color:white;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="calculator">
+
+    <div class="history" id="history"></div>
+    <div class="display" id="display">0</div>
+
+    <div class="buttons">
+
+        <!-- Row 1 -->
+        <button class="clear" onclick="clearDisplay()">❌</button>
+        <button class="op" onclick="append('*')">✖️</button>
+          <button class="op" onclick="append('/')">➗</button>
+        <button class="op" onclick="append('-')">➖</button>
+
+        <!-- Row 2 -->
+        <button class="num" onclick="append('7')">7</button>
+        <button class="num" onclick="append('8')">8</button>
+        <button class="num" onclick="append('9')">9</button>
+        <button class="op" onclick="append('+')">➕</button>
+
+        <!-- Row 3 -->
+        <button class="num" onclick="append('4')">4</button>
+        <button class="num" onclick="append('5')">5</button>
+        <button class="num" onclick="append('6')">6</button>
+        <button class="equal" onclick="calculate()">=</button>
+
+        <!-- Row 4 -->
+        <button class="num" onclick="append('1')">1</button>
+        <button class="num" onclick="append('2')">2</button>
+        <button class="num" onclick="append('3')">3</button>
+        <button class="num" onclick="append('0')">0</button>
+
+    </div>
+</div>
+
+<script>
+let display = document.getElementById("display");
+let history = document.getElementById("history");
+
+function append(value){
+    if(display.innerText === "0"){
+        display.innerText = value;
+    } else {
+        display.innerText += value;
+    }
+}
+
+function clearDisplay(){
+    display.innerText = "0";
+}
+
+function calculate(){
+    try{
+        let expression = display.innerText;
+        let result = eval(expression);
+        history.innerText = expression + " = " + result;
+        display.innerText = result;
+    } catch{
+        display.innerText = "Error";
+    }
+}
+
+// Keyboard support
+document.addEventListener('keydown', (e) => {
+    e.preventDefault(); // prevent unwanted default actions
+    const key = e.key;
+
+    // Numbers
+    if(key >= '0' && key <= '9'){
+        append(key);
+    }
+
+    // Operators
+    else if(key === '+' || key === '-' || key === '*' || key === '/'){
+        append(key);
+    }
+
+    // Enter → calculate
+    else if(key === 'Enter'){
+        calculate();
+    }
+
+    // Backspace → delete last
+    else if(key === 'Backspace'){
+        display.innerText = display.innerText.slice(0, -1) || '0';
+    }
+
+    // Escape → clear
+    else if(key === 'Escape'){
+        clearDisplay();
+    }
+});
+</script>
+ 
+</body>
+</html>
